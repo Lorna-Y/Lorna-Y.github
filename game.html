@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="game.js"></script>
+    <title>游戏</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style type="text/css">
+  body{
+    background-image:url("背景.png");
+    background-attachment:fixed;
+  }
+    h1{
+      text-align:center;
+      color:#ffc107;
+      }
+      .sty1{
+        color: #ffc107;
+        text-align: center;
+      }
+   .button{
+     background-color:yellow;
+     color:orange;
+     padding:10px 50px;
+     text align:center;
+     border-color: orange;
+     font-size:16px;
+     width:200px;
+   }
+   img {
+      border: 2px solid #000;
+    }
+  </style>
+
+ </head>
+ <body>
+   <br/>
+  <h1 style="font-size:250%;">倒放猜歌挑战</h1>
+ <p class="sty1">
+   <b>
+   歌曲皆出自时代少年团《乌托邦少年》专辑<br/>
+   你能根据倒放的音乐猜出是哪一首歌吗<br/>
+   播放音乐并进行作答吧<br>
+   </b>
+  </p>
+<div style="text-align:center;">
+ <button onclick="tips()" style="background: #ffc107;width: 200px;height: 40px;color:white;border-color:#ffc107"><b>点击此处查看作答格式</b></button>
+ </div>
+<br>
+
+<div class="text-center" >
+  <img src="时代少年团.jpg" class="rounded" alt="..."style="width:500px">
+  <img src="时代少年团1.jpg" class="rounded" alt="..."style="width:500px">
+  <img src="时代少年团2.jpg" class="rounded" alt="..."style="width:500px">
+</div>
+<br><br>
+
+<div style="text-align:center;">
+<audio controls style="background:none;width:200px;height: 30px;">
+  <source src="绝配.mp3" type="audio/mpeg">
+</audio>
+<audio controls style="background:none;width:200px;height: 30px;">
+  <source src="哭泣的游戏.mp3" type="audio/mpeg">
+</audio>
+<audio controls style="background:none;width:200px;height: 30px;">
+  <source src="醉.mp3" type="audio/mpeg">
+</audio>
+<audio controls style="background:none;width:200px;height: 30px;">
+  <source src="哪吒.mp3" type="audio/mpeg">
+</audio>
+<audio controls style="background:none;width:200px;height: 30px;">
+  <source src="侠.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<br>
+<div style="text-align:center;">
+<p style="color:#ffc107"><b>点击按钮查看提示，再次点击关闭</b></p>
+</div>
+<br>
+
+
+<div style="text-align:center;">
+<button onclick="tip()"class="button" ><b>第一首提示</b></button>
+<button onclick="tip1()"class="button"><b>第二首提示</b></button>
+<button onclick="tip2()"class="button"><b>第三首提示</b></button>
+<button onclick="tip3()"class="button"><b>第四首提示</b></button>
+<button onclick="tip4()"class="button"><b>第五首提示</b></button>
+</div>
+<br>
+
+    <img src='绝配.jpg' id="oImg" class="rounded mx-auto" style='display:none'width="500px" >
+    <img src='哭泣的游戏.jpg' id="oImg1" class="rounded mx-auto" style='display:none'width="500px" >
+    <img src='醉.jpg' id="oImg2" class="rounded mx-auto" style='display:none'width="500px" >
+    <img src='哪吒.jpg' id="oImg3" class="rounded mx-auto" style='display:none'width="500px" >
+    <img src='侠.jpg' id="oImg4" class="rounded mx-auto" style='display:none'width="500px" >
+
+<div style="text-align:center;">
+<p style="color:#ffc107"><b>点击下方按钮进行作答</b></p>
+<br>
+</div>
+<div style="text-align:center;">
+<button onclick="answer()"class="button" ><b>第一首</b></button>
+<button onclick="answer1()"class="button"><b>第二首</b></button>
+<button onclick="answer2()"class="button"><b>第三首</b></button>
+<button onclick="answer3()"class="button"><b>第四首</b></button>
+<button onclick="answer4()"class="button"><b>第五首</b></button>
+</div>
+<br><br>
+<div style="text-align:center;">
+<button onclick="yeah()"style="border-color:#ffc107;background: #ffc107;width: 200px;height: 40px;color:white" ><b>成绩</b></button>
+<a href="answer.html">
+<button onclick="check()"style="border-color:#ffc107;background: #ffc107;width: 200px;height: 40px;color:white" ><b>答案</b></button>
+</a>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
